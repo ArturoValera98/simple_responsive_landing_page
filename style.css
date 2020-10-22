@@ -1,0 +1,282 @@
+html {
+  background-image: url(./images/background.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+/* HEADER */
+
+header {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  background: #0e76a8;
+}
+
+/* WHY US  */
+
+#why {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+ul {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+
+#contact_us {
+  font-size: 0.6rem;
+  visibility: hidden;
+}
+
+/* FORM */
+
+.form {
+  background: rgba(255, 255, 255, 0.522);
+  border: 1px solid white;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+h2 {
+  margin: 0.8em;
+}
+
+input {
+  margin: 0.5rem 0;
+  text-align: center;
+  color: black;
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+#experience {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="radio"] {
+  border: 0px;
+  width: 100%;
+  height: 1em;
+}
+
+textarea {
+  width: 90%;
+  color: black;
+  resize: none;
+}
+
+textarea::placeholder {
+  text-align: center;
+  border-radius: 20px;
+}
+
+#submit {
+  border-radius: 10px;
+  width: 100%;
+  background: #0e76a8;
+  padding: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.button {
+  text-decoration: none;
+}
+
+#submit:hover {
+  background: deepskyblue;
+}
+
+/* SOCIAL MEDIA */
+
+.media {
+  bottom: 0.1rem;
+  left: 0;
+  text-align: center;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon {
+  color: white;
+  cursor: pointer;
+  font-size: 0.6rem;
+}
+
+#facebook:hover {
+  color: #3b5998;
+}
+
+#twitter:hover {
+  color: #00acee;
+}
+
+#linkedin:hover {
+  color: #0e76a8;
+}
+
+/* COLUMN LAYOUT */
+
+#left {
+  float: left;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: blue; */
+}
+
+#right {
+  float: right;
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: red; */
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 85%;
+  }
+
+  #experience {
+    font-size: 0.8rem;
+  }
+
+  #why {
+    font-size: 2rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #right {
+    float: none;
+    width: 100%;
+    height: 93vh;
+    display: flex;
+  }
+
+  #left {
+    float: none;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .media {
+    position: relative;
+  }
+  header {
+    font-size: 1.6em;
+  }
+
+  #contact_us {
+    visibility: visible;
+  }
+
+  #experience {
+    font-size: 0.3rem;
+  }
+
+  .form {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    font-size: 0.6rem;
+  }
+
+  .media {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #left {
+    float: none;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header {
+    font-size: 0.9rem;
+  }
+  #why {
+    font-size: 1.3rem;
+  }
+
+  .icon {
+    font-size: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  input {
+    font-size: 0.3rem;
+  }
+
+  #experience {
+    font-size: 0.3rem;
+  }
+
+  input[type="radio"] {
+    border: 0px;
+    width: 100%;
+    height: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  header {
+    font-size: 1rem;
+  }
+}
